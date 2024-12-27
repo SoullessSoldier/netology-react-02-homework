@@ -1,0 +1,73 @@
+
+/*Project styles*/
+#root {
+  padding: 0 40px;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio-main {
+  width: 100%;
+}
+
+.toolbar {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px
+}
+.toolbar-btn {
+  background-color: var(--color-white);
+  color: var(--color-gray);
+  border: 1px solid var(--color-gray);
+  outline: none;
+  transition: background-color 0.33s ease-in-out, color .33s ease-in-out;
+}
+
+.toolbar-btn:hover,
+.toolbar-btn:active {
+  background-color: var(--color-light-gray);
+  border-color: var(--color-light-gray);
+}
+
+.toolbar-btn:focus{
+  outline: none;
+}
+
+.toolbar-btn-active:hover,
+.toolbar-btn-active {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  border-color: var(--color-gray);
+  cursor: not-allowed;
+}
+
+.masonry {
+  width: 100%;
+}
+
+.masonry-item {
+  height: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  transition: transform .33s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.masonry-item:hover {
+  transform: translateY(-10px);
+}
+
+.masonry-item-img {
+  width: 100%;
+  height: auto;
+}
+
+
