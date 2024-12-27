@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Masonry from "react-responsive-masonry";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 function ProjectList({ projects }) {
   const childElements = [...projects].map((projectItem, index) => (
@@ -12,9 +12,13 @@ function ProjectList({ projects }) {
   ));
   return (
     <div className="masonry">
-      <Masonry columnsCount={3} gutter="10px">
-        {childElements}
-      </Masonry>
+      <ResponsiveMasonry
+        columnsCountBreakPoints={{ 300: 2, 500: 3, 700: 4, 900: 5 }}
+      >
+        <Masonry columnsCount={3} gutter="10px">
+          {childElements}
+        </Masonry>
+      </ResponsiveMasonry>
     </div>
   );
 }
