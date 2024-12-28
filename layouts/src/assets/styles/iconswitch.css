@@ -1,0 +1,30 @@
+.iconswitch {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.iconswitch-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.iconswitch-item-btn {
+  font-size: 0;
+  background-color: transparent;
+  border-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.iconswitch-item-btn:hover {
+  border-color: var(--color-light-gray);
+  outline: none;
+  box-shadow: none;
+}
+
+.iconswitch-item-btn-active,
+.iconswitch-item-btn-active:hover {
+  border-color: var(--color-gray);
+}

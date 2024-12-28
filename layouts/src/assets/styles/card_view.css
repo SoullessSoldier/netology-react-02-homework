@@ -1,0 +1,13 @@
+.cards-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+@media (width < 1050px) {
+    .cards-list {
+    justify-content: center;
+    }
+}
