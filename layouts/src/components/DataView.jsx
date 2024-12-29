@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function DataView({mode, data}) {
     if (mode === "list") {
-        return <ListView data={data}/>;
+        return <ListView products={data}/>;
       }
       return <CardsView products={data} />;
 }

@@ -1,0 +1,7 @@
+.products {
+  width: 100%;
+}
+
+.products-list-item:not(:last-child) {
+  margin-bottom: 5px;
+}

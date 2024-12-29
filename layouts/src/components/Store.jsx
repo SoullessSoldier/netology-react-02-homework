@@ -7,7 +7,6 @@ function Store({ data, icons }) {
   const [layout, setLayout] = useState(icons[0].name);
 
   const toggleLayout = (activeLayout) => {
-    console.log("activeLayout", activeLayout);
     if (activeLayout !== layout) {
       setLayout(() => activeLayout);
     }
