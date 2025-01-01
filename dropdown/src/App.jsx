@@ -1,10 +1,10 @@
+import Dropdown from "@/components/Dropdown";
 import "./App.css";
-import Portfolio from "@/components/Portfolio";
 
 function App() {
   return (
     <>
-      <Portfolio />
+      <Dropdown />
     </>
   );
 }
