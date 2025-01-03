@@ -7,7 +7,7 @@ function CardsView({products}) {
     <div className="cards">
       <ul className="cards-list">
         {
-          [...products].map((item, index) => {
+          products.map((item, index) => {
             item.id = index;
             return (<li key={index}>
               <CardItem data={item} />

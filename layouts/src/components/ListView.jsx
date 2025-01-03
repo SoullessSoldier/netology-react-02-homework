@@ -6,7 +6,7 @@ function ListView({products}) {
   return (
     <div className="products">
       <ul className="products-list">
-        {[...products].map((item, index) => {
+        {products.map((item, index) => {
           item.id = index;
           return (
             <li className="products-list-item" key={index}>

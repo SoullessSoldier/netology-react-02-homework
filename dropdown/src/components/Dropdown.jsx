@@ -13,10 +13,9 @@ function Dropdown() {
     });
   };
 
-  const handleSetAccountMenuItem = (event) => {
-    const menuItem = parseInt(event.target.closest(".dropdown-item").dataset.menuId);
-    if (menuItem !== activeMenuItem) {
-      setActiveMenuItem(() => menuItem);
+  const handleSetAccountMenuItem = (index) => {
+    if (index !== activeMenuItem) {
+      setActiveMenuItem(() => index);
     }
   };
 

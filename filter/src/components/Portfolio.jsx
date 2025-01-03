@@ -15,13 +15,11 @@ const getFiltersSet = (data) => {
 const filtersData = getFiltersSet(data);
 
 function Portfolio() {
-  const [activeFilter, setActiveFilter] = useState(parseInt(0));
+  const [activeFilter, setActiveFilter] = useState(0);
 
   const setFilter = (activeFilterId) => {
     if (activeFilterId !== activeFilter){
-      setActiveFilter(() => {
-        return parseInt(activeFilterId) 
-      })
+      setActiveFilter(() => activeFilterId)
     }
   }
 

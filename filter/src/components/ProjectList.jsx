@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 function ProjectList({ projects }) {
-  const childElements = [...projects].map((projectItem, index) => (
+  const childElements = projects.map((projectItem, index) => (
     <img
       key={index}
       className={"masonry-item-img"}

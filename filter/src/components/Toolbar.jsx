@@ -1,20 +1,16 @@
 import PropTypes from "prop-types";
 
 function Toolbar({ filters, selected, onSelectFilter }) {
-  const handleFilterChange = (event) => {
-    const buttonId = event.target.dataset.id;
-    onSelectFilter(buttonId); 
-  }
+  const handleFilterChange = (index) => onSelectFilter(index);
   return (
     <div className="toolbar">
-      {[...filters].map((filterItem, index) => (
+      {filters.map((filterItem, index) => (
         <button
           key={index}
-          data-id={index}
           className={`toolbar-btn ${
             index === selected ? "toolbar-btn-active" : ""
           }`}
-          onClick={handleFilterChange}
+          onClick={() => handleFilterChange(index)}
         >
           {filterItem}
         </button>
